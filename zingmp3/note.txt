@@ -1,0 +1,24 @@
+Authentication => Đăng nhập, đăng ký, quên mật khẩu, kích hoạt tài khoản 
+
+Server: Api => Logic đăng nhập do server xử lý => Token
+
+Client: Gửi email, pass qua API => Nhận token => Lưu vào localStorage
+
+Cách triển khai Authentication:
+
+- Tự xây dựng từ đầu
+- Dùng qua các bên thứ 3: Firebase, Auth0,...
+
+Quản lý state khi xây dựng chức đăng nhập
+
+Submit Form => Get api => Nếu success => Lưu token vào localStorage => cập nhật state lên Redux
+
+Các tình huống xảy ra khi làm việc với Authentication 
+
+- Token dưới localStorage vẫn còn, nhưng token trên server bị xóa
+- Token dưới localStorage vẫn còn, user trên server bị xóa
+
+Lưu ý khi làm chức năng đăng xuất: 
+
+- Xóa token trên phía server
+- Nếu server trả về thành công => xóa token ở localStorage

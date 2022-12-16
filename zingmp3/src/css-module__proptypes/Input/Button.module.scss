@@ -1,0 +1,11 @@
+.btn-success {
+  background: blueviolet;
+  color: yellow;
+}
+
+.btn {
+  padding: 15px 30px;
+  &.btn-large {
+    padding: 20px 40px;
+  }
+}

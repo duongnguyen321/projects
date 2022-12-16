@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MathQuiz</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex">
+            <div class="logo d-flex">
+                <div class="img">
+                    <img src="./img/award1.svg" alt="">
+                </div>
+                <div class="text-logo">MATH QUIZ</div>
+            </div>
+
+            <div class="categories d-flex">
+                <div class="add" id="+">ADD</div>
+                <div class="sub" id="-">SUB</div>
+                <div class="mul" id="*">MUL</div>
+                <div class="div" id="/">DIV</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="question">
+                <span class="number1"></span> <span class="category"> <span class="operator"></span></span> <span class="number2"></span> = <span class="result">?</span> <span class="right-wrong"></span>
+            </div>
+
+            <div class="options d-flex">
+                <div class="option op1"></div>
+                <div class="option op2"></div>
+                <div class="option op3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

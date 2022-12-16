@@ -1,0 +1,153 @@
+header {
+  width: 100%;
+  max-width: 1440px;
+  height: 696px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+header .information {
+  margin-top: 150px;
+  margin-left: 164px;
+  width: 410px;
+  height: 232px;
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+}
+header .contents {
+  width: 632px;
+  height: 160px;
+  margin-right: 162px;
+  margin-top: 112px;
+}
+header .img_ava {
+  position: absolute;
+  width: 632px;
+  height: 632px;
+  left: 610px;
+top: 328px;
+  background-image: url(../assets/images/duonginblack.jpg);
+ border-radius: 10px;
+}
+header .img_ava:hover {
+  background-image: url(../assets/images/duong.jpg);
+}
+header .rectangle_1 {
+  position: absolute;
+  width: 879px;
+  height: 1125px;
+  left: -363px;
+  top: -540px;
+  border-radius: 35px;
+
+}
+header .rectangle_2 {
+  position: absolute;
+  width: 960px;
+  height: 1086px;
+  left: 480px;
+  top: 50px;
+}
+.ellipse_1 {
+  position: absolute;
+  left: 37px;
+  top: 335px;
+  animation: linear infinite 5s ellipse_1;
+}
+.ellipse_2 {
+  position: absolute;
+  left: 1082px;
+  top: 335px;
+  animation: linear infinite 5s ellipse_2;
+}
+header .star_1 {
+  position: absolute;
+  left: 575px;
+  top: 293px;
+}
+header .star_2 {
+  position: absolute;
+  left: 1204.5px;
+  top: 922.5px;
+}
+header .gear {
+  position: absolute;
+  left: 1305px;
+  top: 632px;
+  font-size: 40px;
+  transition: all linear 1s;
+  z-index: 100;
+}
+header .gear:hover {
+  transform: rotate(180deg);
+  animation: linear infinite 1s color;
+}
+header .ellipse_1 {
+  background: var(--primary-purple);
+}
+header .ellipse_2 {
+  background: var(--primary-cyan);
+}
+@keyframes color {
+  00% {
+    color: var(--neutral-900);
+  }
+  20% {
+    color: var(--neutral-000);
+  }
+  60% {
+    color: var(--primary-cyan);
+  }
+  60% {
+    color: var(--primary-green);
+  }
+  80% {
+    color: var(--primary-purple);
+  }
+  100% {
+    color: var(--primary-orange);
+  }
+}
+@keyframes ellipse_1 {
+  0% {
+    left: 37px;
+  top: 335px;
+    z-index:-1;
+    opacity: 1;
+  }
+  50% {
+    left: 1082px;
+  top: 305px;
+  z-index: -2;
+  opacity: 0.5;
+  }
+  100% {
+    left: 37px;
+    top: 345px;
+    z-index:-1;
+    opacity: 1;
+  }
+}
+@keyframes ellipse_2 {
+  0% {
+    left: 1082px;
+    top: 335px;
+  z-index: -2;
+  opacity: 0.5;
+  }
+  50% {
+    left: 37px;
+    top: 325px;
+    z-index:-1;
+    opacity: 1;
+  }
+  100% {
+    left: 1082px;
+  top: 365px;
+  z-index: -2;
+  opacity: 0.5;
+  }
+}

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Stravel using css and js, Create by Duong"
+    />
+    <title>Stravel</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loading.css" />
+  </head>
+  <body class="light">
+    <div id="loading" class="loading active">
+      <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+      </div>
+    </div>
+    <div id="homepage" class="homepage">
+      <header id="header" class="header">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="index.html" class="logo"><span>S</span>Travel</a>
+        <nav class="navbar">
+          <a href="#home">Trang Chủ</a>
+          <a href="#book">Đặt lịch</a>
+          <a href="#packages">Ưu Đãi</a>
+          <a href="#services">Dịch Vụ</a>
+          <a href="#gallery">Thư Viện</a>
+          <a href="#review">Đánh giá</a>
+          <a href="#contact">Liên Hệ</a>
+        </nav>
+        <div class="icons">
+          <i class="far fa-moon btn-toggle"></i>
+
+          <i class="fas fa-search" id="search-btn"></i>
+
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Tìm kiếm..." />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </header>
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="" class="login_register">
+          <div class="menuheader">
+            <h3 class="loginform active">Đăng nhập</h3>
+            <h3 class="registerform">Đăng ký</h3>
+          </div>
+          <div class="login active">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                class="box"
+                placeholder="Email của bạn"
+                title="Nhập email của bạn"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                class="box"
+                placeholder="Mật khẩu của bạn"
+                title="Nhập mật khẩu của bạn"
+              />
+            </label>
+            <div class="textbtn">
+              <p>
+                <a href="#">Quên mật khẩu ?</a>
+              </p>
+              <label for="remember">
+                <input type="checkbox" id="remember" />
+                Ghi nhớ
+              </label>
+            </div>
+            <input type="submit" value="Đăng nhập" name="login" class="btn" />
+          </div>
+          <div class="register">
+            <label for="email">
+              <input
+                name="email"
+                type="email"
+                class="box"
+                placeholder="Email của bạn"
+                title="Nhập email của bạn"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="box"
+                placeholder="Mật khẩu của bạn"
+                title="Nhập mật khẩu của bạn"
+              />
+            </label>
+            <label for="repassword">
+              <input
+                name="repassword"
+                id="repassword"
+                type="password"
+                class="box"
+                placeholder="Nhập lại mật khẩu của bạn"
+                title="Nhập lại mật khẩu của bạn"
+              />
+              <span class="reerror"></span>
+            </label>
+            <input type="submit" value="Đăng ký" name="register" class="btn" />
+          </div>
+        </form>
+      </div>
+      <section class="home" id="home">
+        <div class="content">
+          <h3>Mọi chuyến đi đều đáng giá</h3>
+          <p>Khám phá các vùng đất mới cùng chúng tôi</p>
+          <p>Những chuyến đi đang chờ đợi bạn</p>
+          <a href="#packages" class="btn">Khám phá ngay</a>
+        </div>
+        <div class="controls">
+          <span class="vid-btn active" data-src="videos/vid-1.mp4"></span>
+          <span class="vid-btn" data-src="videos/vid-2.mp4"></span>
+          <span class="vid-btn" data-src="videos/vid-3.mp4"></span>
+        </div>
+        <div class="video-container">
+          <video
+            src="videos/vid-1.mp4"
+            id="video-slider"
+            loop
+            autoplay
+            muted
+          ></video>
+        </div>
+      </section>
+      <section class="book" id="book">
+        <h1 class="heading">
+          <span>T</span>
+          <span>Ì</span>
+          <span>M</span>
+          <span class="space"></span>
+          <span>Ư</span>
+          <span>U</span>
+          <span class="space"></span>
+          <span>Đ</span>
+          <span>Ã</span>
+          <span>I</span>
+        </h1>
+        <div class="row">
+          <div class="image">
+            <img src="images/book-img.svg" alt="img" />
+          </div>
+          <form>
+            <div class="inputBox">
+              <h3>Hãy liên hệ với tôi bằng :</h3>
+              <input type="text" placeholder="Email hoặc số điện thoại" />
+            </div>
+            <div class="inputBox">
+              <h3>Tôi muốn đến :</h3>
+              <select>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Angola">Angola</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">
+                  Central African Republic
+                </option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="France">France</option>
+                <option value="France Metropolitan">
+                  France, Metropolitan
+                </option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Guam">Guam</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Holy See">Holy See (Vatican City State)</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran (Islamic Republic of)</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Democratic People's Republic of Korea">
+                  Korea, Democratic People's Republic of
+                </option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Lao">Lao People's Democratic Republic</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Macau">Macau</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Panama">Panama</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russian Federation</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint LUCIA">Saint LUCIA</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia (Slovak Republic)</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Span">Spain</option>
+                <option value="SriLanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Syria">Syrian Arab Republic</option>
+                <option value="Taiwan">Taiwan, Province of China</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam" selected>Viet Nam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <input type="text" placeholder="Địa điểm chính xác" />
+            </div>
+
+            <div class="inputBox">
+              <h3>Chúng tôi có :</h3>
+              <input type="number" placeholder="Số người" />
+            </div>
+            <div class="inputBox">
+              <h3>bắt đầu từ :</h3>
+              <input type="date" />
+            </div>
+            <div class="inputBox">
+              <h3>Kết thúc vào :</h3>
+              <input type="date" />
+            </div>
+            <input type="submit" class="btn" value="Tìm Ngay" />
+          </form>
+        </div>
+      </section>
+      <section class="packages" id="promo">
+        <h1 class="heading">
+          <span>c</span>
+          <span>H</span>
+          <span>O</span>
+          <span class="space"></span>
+          <span>B</span>
+          <span>Ạ</span>
+          <span>N</span>
+        </h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="" class="promoImg" alt="img" />
+            <div class="content">
+              <div style="display: flex; flex-direction: row; gap: 5px">
+                <h3><i class="fas fa-map-marker-alt"></i></h3>
+                <h3 class="country"></h3>
+              </div>
+              <p class="countryContent"></p>
+              <p class="countryPackages"></p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <a href="" class="btn countrypages">Đặt ngay</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="packages" id="packages">
+        <h1 class="heading">
+          <span>Ư</span>
+          <span>U</span>
+          <span class="space"></span>
+          <span>Đ</span>
+          <span>Ã</span>
+          <span>I</span>
+        </h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="images/p-1.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
+              <p>Mumbai-Thành phố của nơi giao thoa giữa quá khứ-hiện tại</p>
+              <p>chuyến đi dành cho gia đình 3N/2Đ</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">30.000.000 <span>52.845.245</span></div>
+              <a href="mumbai/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/p-2.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
+              <p>
+                hawaii-hòn đảo muôn màu và thiên đường của người chơi lướt ván
+              </p>
+              <p>chuyến đi dành cho gia đình 5N/6Đ</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">50.000.000 <span>65.124.756</span></div>
+              <a href="hawaii/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/p-3.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> sydney</h3>
+              <p>Sydney-xứ sở chuột túi và nhà hát SYDNEY OPERA HOUSE</p>
+              <p>chuyến đi dành cho gia đình 2N/3Đ</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">35.000.000 <span>43.354.657</span></div>
+              <a href="sydney/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/p-4.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> paris</h3>
+              <p>Paris-Kinh đô thời trang và thành phố về đêm</p>
+              <p>chuyến đi dành cho gia đình 5N/6Đ</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">70.000.000 <span>83.534.978</span></div>
+              <a href="paris/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/p-5.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> tokyo</h3>
+              <p>
+                tokyo-thủ đô có sư giao thoa hài hoà giữa truyền thống và hiện
+                đại
+              </p>
+              <p>Chuyến đi tự túc cho 1 người/7Ngày</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">6.500.000 <span>10.000.000</span></div>
+              <a href="tokyo/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/p-6.jpg" alt="img" />
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+              <p>Egypt-vùng đất của Pharaohs và kỳ quan thế giới cổ đại</p>
+              <p>chuyến đi dành cho đoàn 7-10 người/7Ngày</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">48.000.000 <span>54.346.456</span></div>
+              <a href="egypt/index.html" class="btn">Đặt ngay</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h1 class="heading">
+          <span>D</span>
+          <span>Ị</span>
+          <span>C</span>
+          <span>H</span>
+          <span class="space"></span>
+          <span>V</span>
+          <span>Ụ</span>
+        </h1>
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>nghỉ dưỡng cao cấp</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Dịch vụ ăn uống</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>chính sách an toàn</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>rộng khắp thế giới</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>tốc độ cao</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Những cuộc phiêu lưu</h3>
+            <p>Some text...</p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <h1 class="heading">
+          <span>T</span>
+          <span>H</span>
+          <span>Ư</span>
+          <span class="space"></span>
+          <span>V</span>
+          <span>I</span>
+          <span>Ệ</span>
+          <span>N</span>
+        </h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="images/g-1.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-2.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-3.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-4.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-5.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-6.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-7.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-8.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/g-9.jpg" alt="img" />
+            <div class="content">
+              <h3>Ảnh chụp</h3>
+              <p>
+                những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ
+                lên đây
+              </p>
+              <a href="/gallery/gallery.html" class="btn">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review" id="review">
+        <h1 class="heading">
+          <span>Đ</span>
+          <span>Á</span>
+          <span>N</span>
+          <span>H</span>
+          <span class="space"></span>
+          <span>G</span>
+          <span>I</span>
+          <span>Á</span>
+        </h1>
+        <div class="rate">
+          <div class="row">
+            <div class="ratestar">
+              <h2>đánh giá chuyến đi của bạn</h2>
+              <div class="skills">
+                <div class="rating">
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                  <input type="radio" name="star" />
+                </div>
+              </div>
+            </div>
+            <form>
+              <div class="inputBox">
+                <textarea
+                  placeholder="viết đánh giá của bạn"
+                  name="rate"
+                  cols="30"
+                  rows="15"
+                ></textarea>
+              </div>
+              <input type="submit" class="btn" value="gửi tới chúng tôi" />
+            </form>
+          </div>
+        </div>
+        <div class="swiper-container review-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/pic1.png" alt="img" />
+                <h3>Some people</h3>
+                <p>Some text....</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/pic2.png" alt="img" />
+                <h3>Some people</h3>
+                <p>Some text....</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/pic3.png" alt="img" />
+                <h3>Some people</h3>
+                <p>Some text....</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/pic4.png" alt="img" />
+                <h3>Some people</h3>
+                <p>Some text....</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="heading">
+          <span>L</span>
+          <span>I</span>
+          <span>Ê</span>
+          <span>N</span>
+          <span class="space"></span>
+          <span>H</span>
+          <span>Ệ</span>
+        </h1>
+        <div class="row">
+          <div class="image">
+            <iframe
+              width="100%"
+              height="350vh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4064000497674!2d105.78126121547308!3d20.976340386026827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd2d89877d7%3A0xe55435164e9b4695!2zMTk3IFRy4bqnbiBQaMO6LCBQLiBWxINuIFF1w6FuLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1650976801748!5m2!1svi!2s"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <form action="">
+            <div class="inputBox">
+              <input type="text" placeholder="Tên của bạn" />
+              <input type="email" placeholder="Email liên hệ" />
+            </div>
+            <div class="inputBox">
+              <input type="number" placeholder="Số điện thoại" />
+              <input type="text" placeholder="Chủ đề" />
+            </div>
+            <textarea
+              placeholder="Viết lời nhắn của bạn"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              type="submit"
+              class="btn"
+              name="send"
+              value="Gửi tới chúng tôi"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="brand-container">
+        <div class="swiper-container brand-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt="img" /></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt="img" /></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt="img" /></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt="img" /></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt="img" /></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt="img" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <a href="#" class="logo"
+              ><h3><span>S</span>travel</h3></a
+            >
+            <p>
+              Trải qua 17 năm phát triển bền vững, STravel đã ghi dấu ấn của
+              mình với thông điệp <br />
+              “Nâng tầm trải nghiệm từng chuyến đi”
+            </p>
+          </div>
+          <div class="box">
+            <h3>Chi nhánh chính</h3>
+            <a href="#">Hà nội</a>
+            <a href="#">Ấn độ</a>
+            <a href="#">Mỹ</a>
+            <a href="#">Nhật Bản</a>
+            <a href="#">Pháp</a>
+          </div>
+          <div class="box">
+            <h3>chuyển hướng</h3>
+            <a href="#home">Trang Chủ</a>
+            <a href="#book">Đặt lịch</a>
+            <a href="#packages">Ưu Đãi</a>
+            <a href="#services">Dịch Vụ</a>
+            <a href="#gallery">Thư Viện</a>
+            <a href="#review">Đánh giá</a>
+            <a href="#contact">Liên Hệ</a>
+          </div>
+          <div class="box">
+            <h3>Tương tác</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+          </div>
+        </div>
+        <h1 class="credit">
+          created by <span> STRAVEL </span> | all rights reserved!
+        </h1>
+      </section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

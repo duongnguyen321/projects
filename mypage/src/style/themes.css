@@ -1,0 +1,337 @@
+.dark ::selection {
+  color: var(--neutral-000);
+  background: var(--primary-orange);
+}
+.light ::selection {
+  color: var(--neutral-000);
+  background: var(--primary-purple);
+}
+.orange ::selection {
+  color: var(--primary-green);
+  background: var(--primary-carrot);
+}
+.green ::selection {
+  color: var(--primary-green);
+  background: var(--primary-carrot);
+}
+.purple ::selection {
+  color: var(--primary-green);
+  background: var(--primary-yellow);
+}
+
+.dark .star {
+  color: var(--primary-orange);
+}
+.orange .star {
+  color: var(--neutral-900);
+}
+.purple .star {
+  color: var(--primary-yellow);
+}
+.light .star {
+  color: var(--primary-purple);
+}
+.green .star {
+  color: var(--primary-carrot);
+}
+
+.dark .info_icon {
+  color: var(--primary-orange);
+}
+.orange .info_icon {
+  color: var(--primary-orange);
+}
+.purple .info_icon {
+  color: var(--primary-purple);
+}
+.light .info_icon {
+  color: var(--primary-purple);
+}
+.green .info_icon {
+  color: var(--primary-carrot);
+}
+
+.dark .formchat .Chatbot h2 {
+  color: var(--primary-orange);
+}
+.orange .formchat .Chatbot h2 {
+  color: var(--primary-orange);
+}
+.purple .formchat .Chatbot h2 {
+  color: var(--primary-purple);
+}
+.light .formchat .Chatbot h2 {
+  color: var(--primary-purple);
+}
+.green .formchat .Chatbot h2 {
+  color: var(--primary-carrot);
+}
+
+.dark .btn {
+  border: 1px solid var(--primary-orange);
+}
+.orange .btn {
+  border: 1px solid var(--primary-orange);
+}
+.purple .btn {
+  border: 1px solid var(--primary-purple);
+}
+.light .btn {
+  border: 1px solid var(--primary-purple);
+}
+.green .btn {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark .Chattoggle {
+  border: 1px solid var(--primary-orange);
+}
+.orange .Chattoggle {
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chattoggle {
+  border: 1px solid var(--primary-purple);
+}
+.light .Chattoggle {
+  border: 1px solid var(--primary-purple);
+}
+.green .Chattoggle {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark .Chatbot .learning-option-button {
+  border: 1px solid var(--primary-orange);
+}
+.orange .Chatbot .learning-option-button {
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chatbot .learning-option-button {
+  border: 1px solid var(--primary-purple);
+}
+.light .Chatbot .learning-option-button {
+  border: 1px solid var(--primary-purple);
+}
+.green .Chatbot .learning-option-button {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark .Chatbot .react-chatbot-kit-user-avatar {
+  border: 1px solid var(--primary-orange);
+}
+.orange .Chatbot .react-chatbot-kit-user-avatar {
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chatbot .react-chatbot-kit-user-avatar {
+  border: 1px solid var(--primary-purple);
+}
+.light .Chatbot .react-chatbot-kit-user-avatar {
+  border: 1px solid var(--primary-purple);
+}
+.green .Chatbot .react-chatbot-kit-user-avatar {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-orange);
+}
+.orange .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-purple);
+}
+.light .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-purple);
+}
+.green .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark
+  .Chatbot
+  .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: var(--primary-orange);
+}
+.orange
+  .Chatbot
+  .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: var(--primary-orange);
+}
+.purple
+  .Chatbot
+  .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: var(--primary-purple);
+}
+.light
+  .Chatbot
+  .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: var(--primary-purple);
+}
+.green
+  .Chatbot
+  .react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: var(--primary-carrot);
+}
+
+.dark .Chatbot .react-chatbot-kit-chat-bot-avatar {
+  color: var(--primary-orange);
+}
+.orange .Chatbot .react-chatbot-kit-chat-bot-avatar {
+  color: var(--primary-orange);
+}
+.purple .Chatbot .react-chatbot-kit-chat-bot-avatar {
+  color: var(--primary-purple);
+}
+.light .Chatbot .react-chatbot-kit-chat-bot-avatar {
+  color: var(--primary-purple);
+}
+.green .Chatbot .react-chatbot-kit-chat-bot-avatar {
+  color: var(--primary-carrot);
+}
+
+.dark .Chatbot .react-chatbot-kit-chat-input-form {
+  border: 1px solid var(--primary-orange);
+}
+.orange .Chatbot .react-chatbot-kit-chat-input-form {
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chatbot .react-chatbot-kit-chat-input-form {
+  border: 1px solid var(--primary-purple);
+}
+.light .Chatbot .react-chatbot-kit-chat-input-form {
+  border: 1px solid var(--primary-purple);
+}
+.green .Chatbot .react-chatbot-kit-chat-input-form {
+  border: 1px solid var(--primary-carrot);
+}
+
+.dark .Chatbot .react-chatbot-kit-chat-message-container {
+  border: 1px solid var(--primary-orange);
+  color: var(--primary-orange);
+}
+.orange .Chatbot .react-chatbot-kit-chat-message-container {
+  color: var(--primary-orange);
+  border: 1px solid var(--primary-orange);
+}
+.purple .Chatbot .react-chatbot-kit-chat-message-container {
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+.light .Chatbot .react-chatbot-kit-chat-message-container {
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+.green .Chatbot .react-chatbot-kit-chat-message-container {
+  color: var(--primary-carrot);
+  border: 1px solid var(--primary-carrot);
+}
+.Chattoggle {
+  background-color: var(--neutral-300);
+}
+.dark .Chattoggle:hover i {
+  color: var(--primary-orange);
+}
+.orange .Chattoggle:hover i {
+  color: var(--primary-orange);
+}
+.purple .Chattoggle:hover i {
+  color: var(--primary-purple);
+}
+.light .Chattoggle:hover i {
+  color: var(--primary-purple);
+}
+.green .Chattoggle:hover i {
+  color: var(--primary-carrot);
+}
+
+.dark .submit_email:hover {
+  color: var(--primary-orange);
+}
+.orange .submit_email:hover {
+  color: var(--primary-orange);
+}
+.purple .submit_email:hover {
+  color: var(--primary-purple);
+}
+.light .submit_email:hover {
+  color: var(--primary-purple);
+}
+.green .submit_email:hover {
+  color: var(--primary-carrot);
+}
+
+.dark a:hover {
+  color: var(--primary-orange);
+}
+.orange a:hover {
+  color: var(--primary-orange);
+}
+.purple a:hover {
+  color: var(--primary-purple);
+}
+.light a:hover {
+  color: var(--primary-purple);
+}
+.green a:hover {
+  color: var(--primary-carrot);
+}
+
+.dark .btn:hover {
+  color: var(--primary-orange);
+  background: var(--neutral-500);
+}
+.orange .btn:hover {
+  color: var(--primary-orange);
+  background: var(--neutral-500);
+}
+.purple .btn:hover {
+  color: var(--primary-purple);
+  background: var(--neutral-100);
+}
+.light .btn:hover {
+  color: var(--primary-purple);
+  background: var(--neutral-100);
+}
+.green .btn:hover {
+  color: var(--primary-carrot);
+  background: var(--neutral-500);
+}
+
+.dark .skill_title {
+  color: var(--primary-orange);
+}
+.orange .skill_title {
+  color: var(--primary-orange);
+}
+.purple .skill_title {
+  color: var(--primary-purple);
+}
+.light .skill_title {
+  color: var(--primary-purple);
+}
+.green .skill_title {
+  color: var(--primary-carrot);
+}
+
+.dark .year_education p.body_16_medium {
+  color: var(--primary-orange);
+}
+.orange .year_education p.body_16_medium {
+  color: var(--primary-orange);
+}
+.purple .year_education p.body_16_medium {
+  color: var(--primary-purple);
+}
+.light .year_education p.body_16_medium {
+  color: var(--primary-purple);
+}
+.green .year_education p.body_16_medium {
+  color: var(--primary-carrot);
+}
+
+body header .rectangle_1 {
+  background: rgba(255, 255, 255, 0.08);
+}
+body header .rectangle_2 {
+  background: rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,30 @@
+@media only screen and (max-width: 805px) {
+  body {
+    max-width: 800px;
+    margin-left: 29.5%;
+  }
+  header .img_ava {
+    left: calc(29.5% + 294px);
+  }
+  header .star_1 {
+    left: calc(29.5% + 260px);
+  }
+  header .star_2 {
+    left: calc(29.5% + 888px);
+    top: 922px;
+  }
+  header .gear {
+    left: calc(29.5% + 984px);
+  }
+  body .Chattoggle {
+    bottom:70px;
+  }
+  header .btn_email {
+    bottom: 130px;
+  }
+  header .btn,
+  body .Chattoggle {
+    width: 80px;
+    height: 50px;
+  }
+}

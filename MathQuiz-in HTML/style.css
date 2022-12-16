@@ -1,0 +1,70 @@
+* {
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header {
+    font-size: 30px;
+    background-color: #FF5959;
+    color: #FFFFFF;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    align-items: center;
+    margin-left: 31px;
+}
+
+
+.categories {
+    margin-left: auto;
+    margin-right: 31px;
+}
+
+.categories div {
+    margin-left: 41px;
+}
+
+.main {
+    font-size: 120px;
+    line-height: 1.333333;
+    margin-top: 190px;
+    text-align: center;
+}
+
+.options {
+    justify-content: center;
+}
+
+.option {
+    background-color: #F8EEEE;
+    font-size: 90px;
+    line-height: 1;
+    margin-right: 75px;
+    padding: 32px 78px;
+}
+
+.option:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+

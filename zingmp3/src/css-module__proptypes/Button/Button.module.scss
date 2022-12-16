@@ -1,0 +1,11 @@
+.btn-success {
+  background: green;
+  color: #fff;
+}
+
+.btn {
+  padding: 15px 30px;
+  &.btn-large {
+    padding: 20px 40px;
+  }
+}

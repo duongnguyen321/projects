@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1370px) {
+  body {
+    max-width: 1366px;
+  }
+  header,
+  .container {
+   max-width: 1366px;
+    overflow: hidden;
+  }
+  header .img_ava {
+    left: 574px;
+  }
+  header .star_1 {
+    left: 540px;
+  }
+  header .star_2 {
+    left: 1168px;
+    top: 922px;
+  }
+  header .gear {
+    left: 1264px;
+  }
+  header .rectangle_2 {
+    width: 960px;
+    left: 404px;
+}
+  @keyframes ellipse_1 {
+    0% {
+      left: 37px;
+    top: 335px;
+      z-index:-1;
+      opacity: 1;
+    }
+    50% {
+      left: 850px;
+    top: 305px;
+    z-index: -2;
+    opacity: 0.5;
+    }
+    100% {
+      left: 37px;
+      top: 345px;
+      z-index:-1;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes ellipse_2 {
+    0% {
+      left: 850px;
+      top: 335px;
+    z-index: -2;
+    opacity: 0.5;
+    }
+    50% {
+      left: 37px;
+      top: 325px;
+      z-index:-1;
+      opacity: 1;
+    }
+    100% {
+      left: 850px;
+    top: 365px;
+    z-index: -2;
+    opacity: 0.5;
+    }
+  }
+  
+}

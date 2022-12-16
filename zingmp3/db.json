@@ -1,0 +1,105 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "name": "Ai chung tình được mãi",
+      "source": "",
+      "image": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/8/3/6/9/8369fd9f387e08f6f53e8f7009aa811e.jpg",
+      "singer": [
+        {
+          "id": 1,
+          "name": "Đinh Tùng Huy"
+        }
+      ],
+      "listen_count": 0,
+      "follow_count": 0,
+      "duration": "04:30",
+      "created_at": "2022-12-12 09:30:30",
+      "updated_at": "2022-12-12 09:30:30"
+    },
+    {
+      "id": 2,
+      "name": "Yêu vội vàng",
+      "source": "",
+      "image": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/8/3/6/9/8369fd9f387e08f6f53e8f7009aa811e.jpg",
+      "singer": [
+        {
+          "id": 1,
+          "name": "Đinh Tùng Huy"
+        },
+        {
+          "id": 2,
+          "name": "Lê Bảo Bình"
+        }
+      ],
+      "listen_count": 0,
+      "follow_count": 0,
+      "duration": "06:30",
+      "created_at": "2022-12-12 09:30:30",
+      "updated_at": "2022-12-12 09:30:30"
+    },
+    {
+      "id": 3,
+      "name": "Kết thúc lâu rồi",
+      "source": "",
+      "image": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/8/3/6/9/8369fd9f387e08f6f53e8f7009aa811e.jpg",
+      "singer": [
+        {
+          "id": 2,
+          "name": "Lê Bảo Bình"
+        }
+      ],
+      "listen_count": 0,
+      "follow_count": 0,
+      "duration": "04:30",
+      "created_at": "2022-12-12 09:30:30",
+      "updated_at": "2022-12-12 09:30:30"
+    }
+  ],
+  "keywords": [
+    {
+      "id": 1,
+      "keyword": "abc"
+    },
+    {
+      "id": 2,
+      "keyword": "abcd"
+    },
+    {
+      "keyword": "a",
+      "id": 3
+    },
+    {
+      "keyword": "yêu",
+      "id": 4
+    },
+    {
+      "keyword": "yêu vội vàng",
+      "id": 5
+    },
+    {
+      "keyword": "kết thúc lâu rồi",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "email": "duong@gmail.com",
+      "password": "$2a$10$5Lv3Pzwui.OTQlMK26ORhOlSJ1cIjeAIuZpvDV04OsknlDL.rOXn6",
+      "name": "duong",
+      "id": 1
+    },
+    {
+      "email": "duongcoilc2004@gmail.com",
+      "password": "$2a$10$BcYm4Pg.T9VX0O7RHy.3d.4UqlGhxU0wj698zxyq1g3.FfcLAVsNq",
+      "name": "duong2",
+      "id": 2
+    },
+    {
+      "email": "hoangan@gmail.com",
+      "password": "$2a$10$ktSRXV1Og2M9ripmnA7Eyu0mENUOhnlIbCFNhAWWhuKsrpVGyj1JS",
+      "name": "dfdfvdaasdasdas",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+.name {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-weight: var(--title-font-weight);
+  font-size: var(--name-font-size);
+  line-height: var(--name-line-height);
+  letter-spacing: var(--title-h1-letter-spacing);
+}
+.title_h1 {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-size: var(--title-h1-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-h1-line-height);
+  letter-spacing: var(--title-h1-letter-spacing);
+}
+.title_h2 {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-size: var(--title-h2-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-h2-line-height);
+  letter-spacing: var(--title-h2-letter-spacing);
+}
+.title_h3 {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-size: var(--title-h3-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-h3-line-height);
+  letter-spacing: var(--title-h3-letter-spacing);
+}
+.title_h4 {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-size: var(--title-h4-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-h4-line-height);
+  letter-spacing: var(--title-h4-letter-spacing);
+}
+.title_h5 {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-size: var(--title-h5-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-h5-line-height);
+  letter-spacing: var(--title-h5-letter-spacing);
+}
+.body_18_regular {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-18-font-size);
+  line-height: var(--body-18-line-height);
+  letter-spacing: var(--body-18-letter-spacing);
+}
+.body_18_medium {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-18-font-size);
+  line-height: var(--body-18-line-height);
+  letter-spacing: var(--body-18-letter-spacing);
+}
+.body_16_regular {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-16-font-size);
+  line-height: var(--body-16-line-height);
+  letter-spacing: var(--body-16-letter-spacing);
+}
+.body_16_medium {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-16-font-size);
+  line-height: var(--body-16-line-height);
+  letter-spacing: var(--body-16-letter-spacing);
+}
+.body_14_regular {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-16-font-size);
+  line-height: var(--body-16-line-height);
+  letter-spacing: var(--body-16-letter-spacing);
+}
+.body_14_medium {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-regular-font-weight);
+  font-size: var(--body-14-font-size);
+  line-height: var(--body-14-line-height);
+  letter-spacing: var(--body-14-letter-spacing);
+}
+.content_subheading {
+  font-family: var(--title-font-family);
+  font-style: var(--font-style);
+  font-weight: var(--title-font-weight);
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+  letter-spacing: var(--content-letter-spacing);
+  text-transform: var(--content-text-transform);
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: var(--neutral-300);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  color: var(--neutral-900);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 52px;
+  height: 52px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 92px;
+  transform: rotate(45deg);
+  z-index: 1;
+  overflow: hidden;
+}
+.star:hover {
+  transform: rotate(225deg);
+}
+.rectangle {
+  filter: blur(299px);
+  z-index: -2;
+}
+.ellipse {
+  width: var(--ellipse-size);
+  height: var(--ellipse-size);
+  border-radius: 50%;
+  filter: blur(var(--filter-blur));
+  z-index: -2;
+}

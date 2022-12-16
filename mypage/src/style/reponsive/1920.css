@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1915px) {
+  header .img_ava {
+    left: 848px;
+  }
+  header .star_1 {
+    left: 814px;
+  }
+  header .star_2 {
+    left: 1442px;
+    top: 922px;
+  }
+  header .gear {
+    left: 1540px;
+  }
+}

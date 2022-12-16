@@ -1,0 +1,72 @@
+.btn_email {
+  bottom:110px
+}
+
+form.form_hide {
+  position: fixed;
+  top: -120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content : center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form.form_show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:rgba(51, 51, 51, 0.1);
+  z-index:999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content : center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form .form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content : center;
+  flex-direction: column;
+  width: auto;
+}
+form .inputBox {
+  padding: 0.5rem 0;
+}
+
+form .inputBox input,.submit_email {
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
+  font-size: 16px;
+  color: #333;
+  text-transform: none;
+  border-radius: 10px;
+}
+form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .inputBox input {
+  width: 49%;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 16px;
+  color: var(--neutral-900);
+  background: var(--neutral-100);
+  text-transform: none;
+  border: 0.5px solid ;
+
+}
+@media (max-width: 450px) {
+  form .inputBox input {
+    width: 100%;
+  }
+}

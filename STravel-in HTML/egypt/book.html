@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Stravel using css and js, Create by Duong"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/page_style/style.css"/>
+    <link rel="stylesheet" href="/loading.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="/pages_script/script.js" defer></script>
+    <title>Booking</title>
+  </head>
+  <body class="light">
+    <div id="loading" class="loading active">
+      <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+      </div>
+    </div>
+<div class="homepage" id="homepage">
+      <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a
+        data-aos="zoom-in-left"
+        data-aos-delay="50"
+        href="/index.html"
+        class="logo"
+      >
+        <span>S</span>TRAVEL
+      </a>
+
+      <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="100" href="/index.html"
+          >Trang chủ</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html#about"
+          >About</a
+        >
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="200"
+          href="index.html#destination"
+          >Điểm đến</a
+        >
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="250"
+          href="index.html#services"
+          >Dịch vụ</a
+        >
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="300"
+          href="index.html#gallery"
+          >Ảnh</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="350" href="index.html#blogs"
+          >blogs</a
+        >
+      </nav>
+      <i
+        class="far fa-moon btn-toggle"
+        data-aos="zoom-in-left"
+        data-aos-delay="400"
+      ></i>
+      <a
+        data-aos="zoom-in-left"
+        data-aos-delay="450"
+        href="index.html"
+        class="btn"
+        >Trở lại</a
+      >
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <span data-aos="fade-up" data-aos-delay="50" class="country">egypt</span>
+        <h3 data-aos="fade-up" data-aos-delay="150" class="contentCountry">vùng đất của Pharaohs</h3>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
+          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
+          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
+          ngoạn mục đáng để bạn khám phá
+        </p>
+        <a
+          data-aos="fade-up"
+          data-aos-delay="300"
+          href="index.html#destination"
+          class="btn"
+          >Tìm hiểu thêm</a
+        >
+      </div>
+    </section>
+    <section class="book-form" id="book-form">
+      <form class="form" action="" onsubmit="onSubmit()">
+        <div data-aos="zoom-in" data-aos-delay="50" class="inputBox">
+          <span style="font-size: 2em"
+            ><h1 class="packages">Ưu đãi 48.000.000 cho 7người/7ngày</h1></span
+          >
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="50" class="inputBox">
+          <span>Số điện thoại</span>
+          <input
+            required
+            id="phonenumber"
+            type="text"
+            placeholder="0912345678"
+            maxlength="10"
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="100" class="inputBox">
+          <span>Email</span>
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="email@gmail.com"
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+          <span>Thời gian đi</span>
+          <input required id="date" type="date" />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="200" class="inputBox">
+          <span
+            >Tôi có
+            <input
+              required
+              value="7"
+              id="peoplenumber"
+              type="number"
+              placeholder="Số người"
+            />
+          </span>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="250" class="inputBox">
+          <span>Tôi thanh toán bằng</span>
+          <select>
+            <option value="momo">Momo</option>
+            <option value="bank">Chuyển khoản</option>
+            <option value="card">Thẻ VISA</option>
+            <option value="none">Thanh toán khi đến nơi</option>
+          </select>
+        </div>
+        <input
+          type="submit"
+          style="display: flex; justify-content: center"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          class="btn"
+          value="Đặt ngay"
+        />
+      </form>
+    </section>
+    <div class="banner">
+      <div class="content" data-aos="zoom-in-up" data-aos-delay="200">
+        <span>Cùng STravel</span>
+        <h3>Bắt đầu chuyến đi của bạn</h3>
+        <p>
+          Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
+          này !
+        </p>
+        <a href="#book-form" class="btn">Đặt Ngay</a>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <a href="#" class="logo"> <span>S</span>TRAVEL </a>
+          <p>
+            Trải qua 17 năm phát triển bền vững, STravel đã ghi dấu ấn của mình
+            với thông điệp <br />
+            “Nâng tầm trải nghiệm từng chuyến đi”
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <h3>Chuyển hướng nhanh</h3>
+          <a href="/index.html" class="links">
+            <i class="fas fa-arrow-right"></i> Trang chủ
+          </a>
+          <a href="index.html#about" class="links">
+            <i class="fas fa-arrow-right"></i> About
+          </a>
+          <a href="index.html#destination" class="links">
+            <i class="fas fa-arrow-right"></i> Điểm đến
+          </a>
+          <a href="index.html#services" class="links">
+            <i class="fas fa-arrow-right"></i> Dịch vu
+          </a>
+          <a href="index.html#gallery" class="links">
+            <i class="fas fa-arrow-right"></i> Ảnh
+          </a>
+          <a href="index.html#blogs" class="links">
+            <i class="fas fa-arrow-right"></i> blogs
+          </a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
+          <h3>Liên Hệ</h3>
+          <p><i class="fas fa-map"></i>Hà nội, Việt Nam</p>
+          <p><i class="fas fa-phone"></i> +84-986-921-104</p>
+          <p><i class="fas fa-envelope"></i> Duongcoilc2004@gmail.com</p>
+          <p><i class="fas fa-clock"></i> 7:00am - 10:00pm</p>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="500">
+          <h3>Tin Tức Mới</h3>
+          <p>Đăng ký để nhận tin tức về ưu đãi sớm nhất!</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              placeholder="Email của bạn"
+              class="email"
+              id=""
+            />
+            <input type="submit" value="Đăng ký" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="credit">
+      created by <span>STravel</span> | all rights reserved!
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        offset: 150,
+        once: true,
+        mirror: false,
+      });
+    </script>
+  </body>
+</html>

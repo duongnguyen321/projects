@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1030px) {
+  body {
+    max-width:1024px;
+    margin-left: 13.5%;
+  }
+  header .img_ava {
+    left: calc(9% + 454px);
+  }
+  header .star_1 {
+    left: calc(9% + 420px);
+  }
+  header .star_2 {
+    left: calc(9% + 1048px);
+    top: 922px;
+  }
+  header .gear {
+    left: calc(9% + 1144px);
+  }
+}

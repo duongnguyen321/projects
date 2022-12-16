@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 2043px;
+  background-color: var(--background);
+  color: var(--neutral-900);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 20px;
+}
+.container .col1 {
+  width: 574px;
+}
+.col1 .social_media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 24px;
+  gap: 16px;
+  position: relative;
+  width: auto;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+.col1 .education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: relative;
+  width: 248px;
+  height: auto;
+  left: -38px;
+  top: 120px;
+}
+.col1 .education .box_education .body_education p.body_14_regular,
+.col1 .skills .body_14_regular {
+  color: var(--neutral-500);
+}
+.col1 .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: relative;
+  width: 248px;
+  height: auto;
+  left: -38px;
+  top: 160px;
+}
+.hr {
+  position: absolute;
+  width: 1112px;
+  height: 1px;
+  left: 130px;
+  top: 1056px;
+  color: var(--neutral-900);
+  margin: 0;
+}
+.container .col2 {
+  width: calc(100% - 574px);
+  padding-top: 400px;
+}
+.col2 .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+.projects .project_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  width: 633px;
+  height: auto;
+}
+.col2 .hobby{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+.hobby_title{
+  margin-top:40px;
+}
+.hobby_item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 633px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  height: auto;
+}
+.project_item .project_time {
+  color: var(--neutral-300);
+}
+.project_item .project_link,
+.project_item .project_info {
+  color: var(--neutral-500);
+}

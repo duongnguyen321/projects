@@ -1,0 +1,38 @@
+body {
+  background-color: var(--neutral-000);
+  color: var(--neutral-700);
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  max-width:1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+body.dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-000);
+}
+
+body.orange {
+  background-color: var(--primary-orange);
+  color: var(--neutral-000);
+}
+body.purple {
+  background-color: var(--primary-purple);
+  color: var(--neutral-000);
+}
+
+body.light {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+body.green {
+  background-color: var(--primary-green);
+  color: var(--neutral-000);
+}

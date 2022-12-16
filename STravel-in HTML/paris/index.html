@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Stravel using css and js, Create by Duong"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Paris</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/page_style/style.css" />
+    <link rel="stylesheet" href="/loading.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="/pages_script/script.js" defer></script>
+  </head>
+  <body class="light">
+    <div id="loading" class="loading active">
+      <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+      </div>
+    </div>
+    <div class="homepage" id="homepage">
+      <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="50"
+          href="/index.html"
+          class="logo"
+        >
+          <span>S</span>TRAVEL
+        </a>
+
+        <nav class="navbar">
+          <a data-aos="zoom-in-left" data-aos-delay="100" href="/index.html"
+            >Trang chủ</a
+          >
+          <a data-aos="zoom-in-left" data-aos-delay="150" href="#about"
+            >About</a
+          >
+          <a data-aos="zoom-in-left" data-aos-delay="200" href="#destination"
+            >Điểm đến</a
+          >
+          <a data-aos="zoom-in-left" data-aos-delay="250" href="#services"
+            >Dịch vụ</a
+          >
+          <a data-aos="zoom-in-left" data-aos-delay="300" href="#gallery"
+            >Ảnh</a
+          >
+          <a data-aos="zoom-in-left" data-aos-delay="350" href="#blogs"
+            >blogs</a
+          >
+        </nav>
+        <i
+          class="far fa-moon btn-toggle"
+          data-aos="zoom-in-left"
+          data-aos-delay="400"
+        ></i>
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="450"
+          href="#book-form"
+          class="btn"
+          >Đặt Ngay</a
+        >
+      </header>
+      <section class="home" id="home">
+        <div class="content">
+          <span data-aos="fade-up" data-aos-delay="50" class="country"
+            >paris</span
+          >
+          <h3 data-aos="fade-up" data-aos-delay="150" class="contentCountry">
+            Kinh đô thời trang
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Paris là một vùng đất của nghệ thuật và nghệ sĩ. Thành phố đầy những
+            di tích có tầm quan trọng trong lịch sử của thành phố và thế giới.
+            Lịch sử phong phú của thành phố này thu hút rất nhiều những người
+            đam mê khảo cổ và những người yêu thích kiến trúc. Một số di tích
+            kiến trúc nổi tiếng là Boulevard Montmartre được xây dựng vào năm
+            1897, Basilique du Sacré-Cœur ở Montmartre, bảo tàng Louvre nổi
+            tiếng, Panthéon…
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="300"
+            href="#destination"
+            class="btn"
+            >Tìm hiểu thêm</a
+          >
+        </div>
+      </section>
+      <section class="book-form" id="book-form">
+        <form action="">
+          <div data-aos="zoom-in" data-aos-delay="50" class="inputBox">
+            <span style="font-size: 2.5em"
+              ><h1 class="packages">
+                Ưu đãi 70.000.000 cho 4người/5ngày
+              </h1></span
+            >
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="100" class="inputBox">
+            <span>
+              <a class="btn btn-book" href="book.html">Đặt ngay</a>
+            </span>
+          </div>
+        </form>
+      </section>
+      <section class="about" id="about">
+        <div class="video-container" data-aos="fade-right" data-aos-delay="150">
+          <video
+            src="/videos/vid-1.mp4"
+            muted
+            autoplay
+            loop
+            class="video"
+          ></video>
+          <div class="controls">
+            <span class="control-btn" data-src="/videos/vid-1.mp4"></span>
+            <span class="control-btn" data-src="/videos/vid-2.mp4"></span>
+            <span class="control-btn" data-src="/videos/vid-3.mp4"></span>
+          </div>
+        </div>
+        <div class="content" data-aos="fade-left" data-aos-delay="250">
+          <span>Tại sao nên chọn Stravel</span>
+          <h3>Trải nghiệm bậc nhất</h3>
+          <p>
+            chúng tôi hợp tác với những địa điểm nghỉ dưỡng có trải nghiệm bậc
+            nhất để đem lại một kỳ nghỉ tuyệt vời cho bạn cùng người thân
+          </p>
+          <a href="#" class="btn">Tìm hiểu thêm về Stravel</a>
+        </div>
+      </section>
+      <section class="destination" id="destination">
+        <div class="heading">
+          <span>Những điểm đến ở Paris</span>
+          <h1>Những điểm du lịch bậc nhất</h1>
+        </div>
+        <div class="box-container">
+          <div class="box" data-aos="fade-up" data-aos-delay="50">
+            <div class="image">
+              <img src="images/des-1.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Tháp Eiffel</h3>
+              <p>
+                một trong những phần tốt nhất của tòa tháp là tầm nhìn toàn cảnh
+                ở trên đỉnh!
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="100">
+            <div class="image">
+              <img src="images/des-2.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Nhà thờ Đức Bà</h3>
+              <p>
+                Đây là một trong những công trình kiến trúc điển hình được thiết
+                kế theo phong cách Gothic Pháp.
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+              <img src="images/des-3.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Bảo tàng Louvre</h3>
+              <p>
+                Bảo tàng Louvre là bảo tàng nghệ thuật được ghé thăm nhiều nhất
+                trên thế giới.
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="200">
+            <div class="image">
+              <img src="images/des-4.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Đại lộ Champs Elysées</h3>
+              <p>
+                Louis Vuitton, Cartier, Guerlain, Montblanc… và nhà hàng nổi
+                tiếng đều nằm trên đại lộ này.
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="250">
+            <div class="image">
+              <img src="images/des-5.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Công viên Disneyland</h3>
+              <p>
+                Người hâm mộ của nhân vật hoạt hình Mickey rất thích ghé thăm
+                Công viên Disneyland Paris
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+              <img src="images/des-6.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Montmartre</h3>
+              <p>
+                Địa danh nổi tiếng nhất của Montmartre có lẽ là Vương cung Thánh
+                đường Sacré-Cœur nằm ở trên đỉnh đồi
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="350">
+            <div class="image">
+              <img src="images/des-7.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Cung điện Versailles</h3>
+              <p>
+                Versailles là lâu đài nổi tiếng nhất ở Pháp và biểu tượng của
+                quyền lực tối thượng thời đại phong kiến
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="400">
+            <div class="image">
+              <img src="images/des-8.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <h3>Moulin Rouge</h3>
+              <p>
+                Moulin Rouge là một quán rượu được biết đến như quê hương của
+                điệu nhảy Cancan nổi tiếng
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="heading">
+          <span>Dịch vụ</span>
+          <h1>Nâng cao trải nghiệm</h1>
+        </div>
+        <div class="box-container">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="100">
+            <i class="fas fa-globe"></i>
+            <h3>Rộng khắp thế giới</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-hiking"></i>
+            <h3>Những cuộc phiêu lưu</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="200">
+            <i class="fas fa-utensils"></i>
+            <h3>Dịch vụ ăn uống</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="250">
+            <i class="fas fa-hotel"></i>
+            <h3>Nghỉ dưỡng cao cấp</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-wallet"></i>
+            <h3>Giá Tốt nhất</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="350">
+            <i class="fas fa-headset"></i>
+            <h3>Hỗ trợ 24/7</h3>
+            <p>Some text...</p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="heading">
+          <span><h2>những bức Ảnh về Paris</h2></span>
+        </div>
+        <div class="box-container">
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="50">
+            <img src="images/gallery-img-1.jpg" alt="img" />
+            <span>Normandie, Pháp</span>
+            <h3 id="modal">Đảo Mont Saint-Michel</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="100">
+            <img src="images/gallery-img-2.jpg" alt="img" />
+            <span>Đấu trường La Mã</span>
+            <h3 id="modal">Nimes Arena</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="images/gallery-img-3.jpg" alt="img" />
+            <span>Languedoc-Roussillon, Pháp</span>
+            <h3 id="modal">pháo đài cổ Carcassonne</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="200">
+            <img src="images/gallery-img-4.jpg" alt="img" />
+            <span>cây cầu cổ xưa và mang tính biểu tượng</span>
+            <h3 id="modal">Cầu Pont du gard</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="250">
+            <img src="images/gallery-img-5.jpg" alt="img" />
+            <span>Chiến trường Chiến tranh thế giới thứ nhất</span>
+            <h3 id="modal">hào quang Trận Somme</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="images/gallery-img-6.jpg" alt="img" />
+            <span>nơi ăn ảnh nhất nước Pháp</span>
+            <h3 id="modal">dãy núi Alps</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="350">
+            <img src="images/gallery-img-7.jpg" alt="img" />
+            <span>Nằm giữa biên giới của Pháp với Italy</span>
+            <h3 id="modal">Mont Blanc</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="400">
+            <img src="images/gallery-img-8.jpg" alt="img" />
+            <span>Provence</span>
+            <h3 id="modal">đồng hoa oải hương</h3>
+          </div>
+          <div class="box img" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="images/gallery-img-9.jpg" alt="img" />
+            <span>thủ đô chính trị và tòa án hoàng gia</span>
+            <h3 id="modal">Château de Versailles</h3>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="content" data-aos="fade-right" data-aos-delay="200">
+          <span>
+            <h2>Những lời đánh giá tốt nhất</h2>
+          </span>
+          <p>
+            Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
+            triển. đây là những đánh giá tốt nhất về chuyến đi Paris này.
+          </p>
+        </div>
+
+        <div class="box-container" data-aos="fade-left" data-aos-delay="300">
+          <div class="box">
+            <p>
+              Chuyến đi rất vui, giá rất rẻ. gọi tư vấn rất nhanh. tôi sẽ quay
+              lại đay môt lần nữa
+            </p>
+            <div class="user">
+              <img src="images/pic-1.png" alt="img" />
+              <div class="info">
+                <h3>Duong Nguyen</h3>
+                <span>Nội trợ</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>
+              Chuyến đi rất vui, đáng để thử. đồ ăn ở đây rất ngon. chắc chắn sẽ
+              quay lại vì đồ ăn hihi
+            </p>
+            <div class="user">
+              <img src="images/pic-2.png" alt="img" />
+              <div class="info">
+                <h3>Some people</h3>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>khách sạn ở rất tuyệt. thích hợp với 1 chỗ nghỉ dưỡng.</p>
+            <div class="user">
+              <img src="images/pic-3.png" alt="img" />
+              <div class="info">
+                <h3>Some people</h3>
+                <span>Nằm nhà</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>
+              Hướng dẫn viên rất chu đáo. mọi dịch vụ đều có và rất thoải mái
+            </p>
+            <div class="user">
+              <img src="images/pic-4.png" alt="img" />
+              <div class="info">
+                <h3>Some people</h3>
+                <span>...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="heading">
+          <span>Đ</span>
+          <span>Á</span>
+          <span>N</span>
+          <span>H </span>
+          <span>G</span>
+          <span>I</span>
+          <span>Á</span>
+        </h1>
+        <div class="row">
+          <div class="image" data-aos="fade-right" data-aos-delay="150">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4064000497674!2d105.78126121547308!3d20.976340386026827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd2d89877d7%3A0xe55435164e9b4695!2zMTk3IFRy4bqnbiBQaMO6LCBQLiBWxINuIFF1w6FuLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1639249145111!5m2!1svi!2s"
+              width="100%"
+              height="350vh"
+            ></iframe>
+          </div>
+          <form action="" data-aos="fade-left" data-aos-delay="200">
+            <div class="inputBox">
+              <input type="text" placeholder="Tên của bạn" />
+              <input type="email" placeholder="Email liên hệ" />
+            </div>
+            <div class="inputBox">
+              <input type="number" placeholder="Số điện thoại" />
+              <input type="text" placeholder="Chủ đề" />
+            </div>
+            <textarea
+              placeholder="Viết đánh giá của bạn về chuyến đi..."
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              type="submit"
+              class="btn"
+              name="send"
+              value="Gửi tới Stravel"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="blogs" id="blogs">
+        <div class="heading">
+          <span>blogs & posts</span>
+          <h1>Tìm hiểu thêm về Paris</h1>
+        </div>
+        <div class="box-container">
+          <div class="box" data-aos="fade-up" data-aos-delay="100">
+            <div class="image">
+              <img src="images/blog-1.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <a href="#" class="link">mang những gì khi đi Paris</a>
+              <p>
+                Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay,
+                trang phục, đồ dùng cá nhân, balo, túi đựng đồ...
+              </p>
+              <div class="icon">
+                <a href="#"><i class="fas fa-clock"></i> 22,11, 2021</a>
+                <a href="#"><i class="fas fa-user"></i> by admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+              <img src="images/blog-2.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <a href="#" class="link">Xin visa đi Paris</a>
+              <p>
+                Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang
+                web chính thức của Đại sứ quán
+              </p>
+              <div class="icon">
+                <a href="#"><i class="fas fa-clock"></i> 22,11, 2021</a>
+                <a href="#"><i class="fas fa-user"></i> by admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="200">
+            <div class="image">
+              <img src="images/blog-3.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <a href="#" class="link">phương tiện di chuyển</a>
+              <p>
+                bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc bất cứ phương tiện
+                nào có thể di chuyển đều được.
+              </p>
+              <div class="icon">
+                <a href="#"><i class="fas fa-clock"></i> 21st may, 2021</a>
+                <a href="#"><i class="fas fa-user"></i> by admin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="banner">
+        <div class="content" data-aos="zoom-in-up" data-aos-delay="200">
+          <span>Cùng STravel</span>
+          <h3>Bắt đầu chuyến đi của bạn</h3>
+          <p>
+            Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ
+            niệm này !
+          </p>
+          <a href="#book-form" class="btn">Đặt Ngay</a>
+        </div>
+      </div>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="logo"> <span>S</span>TRAVEL </a>
+            <p>
+              Trải qua 17 năm phát triển bền vững, STravel đã ghi dấu ấn của
+              mình với thông điệp <br />
+              “Nâng tầm trải nghiệm từng chuyến đi”
+            </p>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>Chuyển hướng nhanh</h3>
+            <a href="/index.html" class="links">
+              <i class="fas fa-arrow-right"></i> Trang chủ
+            </a>
+            <a href="#about" class="links">
+              <i class="fas fa-arrow-right"></i> About
+            </a>
+            <a href="#destination" class="links">
+              <i class="fas fa-arrow-right"></i> Điểm đến
+            </a>
+            <a href="#services" class="links">
+              <i class="fas fa-arrow-right"></i> Dịch vụ
+            </a>
+            <a href="#gallery" class="links">
+              <i class="fas fa-arrow-right"></i> Ảnh
+            </a>
+            <a href="#blogs" class="links">
+              <i class="fas fa-arrow-right"></i> blogs
+            </a>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="400">
+            <h3>Liên Hệ</h3>
+            <p><i class="fas fa-map"></i>Hà nội, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> +84-986-921-104</p>
+            <p><i class="fas fa-envelope"></i> Duongcoilc2004@gmail.com</p>
+            <p><i class="fas fa-clock"></i> 7:00am - 10:00pm</p>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="500">
+            <h3>Tin Tức Mới</h3>
+            <p>Đăng ký để nhận tin tức về ưu đãi sớm nhất!</p>
+            <form action="">
+              <input
+                type="email"
+                name=""
+                placeholder="Email của bạn"
+                class="email"
+                id=""
+              />
+              <input type="submit" value="Đăng ký" class="btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="credit">
+        created by <span>STravel</span> | all rights reserved!
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        offset: 150,
+        once: true,
+        mirror: false,
+      });
+    </script>
+  </body>
+</html>

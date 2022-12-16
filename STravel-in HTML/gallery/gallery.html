@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Stravel using css and js, Create by Duong"
+    />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/loading.css" />
+    <title>Gallery</title>
+  </head>
+  <body class="light">
+    <div id="loading" class="loading active">
+      <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+      </div>
+    </div>
+    <div class="homepage" id="homepage" style="margin-top: 50px">
+      <header id="header" class="header">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="/index.html" class="logo"><span>S</span>Travel</a>
+        <nav class="navbar">
+          <a href="#home">Tổng hợp</a>
+          <a href="#hawaii">Hawaii</a>
+          <a href="#mumbai">Mumbai</a>
+          <a href="#paris">Paris</a>
+          <a href="#sydney">Sydney</a>
+          <a href="#tokyo">Tokyo</a>
+        </nav>
+        <div class="icons">
+          <i class="far fa-moon btn-toggle"></i>
+
+          <i class="fas fa-search" id="search-btn"></i>
+
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Tìm kiếm..." />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </header>
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="" class="login_register">
+          <div class="menuheader">
+            <h3 class="loginform active">Đăng nhập</h3>
+            <h3 class="registerform">Đăng ký</h3>
+          </div>
+          <div class="login active">
+            <label for="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="box"
+                placeholder="Email của bạn"
+                title="Nhập email của bạn"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                class="box"
+                placeholder="Mật khẩu của bạn"
+                title="Nhập mật khẩu của bạn"
+              />
+            </label>
+            <div class="textbtn">
+              <p>
+                <a href="#">Quên mật khẩu ?</a>
+              </p>
+              <label for="remember">
+                <input type="checkbox" id="remember" />
+                Ghi nhớ
+              </label>
+            </div>
+            <input type="submit" value="Đăng nhập" name="login" class="btn" />
+          </div>
+          <div class="register">
+            <label for="email">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="box"
+                placeholder="Email của bạn"
+                title="Nhập email của bạn"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="box"
+                placeholder="Mật khẩu của bạn"
+                title="Nhập mật khẩu của bạn"
+              />
+            </label>
+            <label for="repassword">
+              <input
+                name="repassword"
+                id="repassword"
+                type="password"
+                class="box"
+                placeholder="Nhập lại mật khẩu của bạn"
+                title="Nhập lại mật khẩu của bạn"
+              />
+              <span class="reerror"></span>
+            </label>
+            <input type="submit" value="Đăng ký" name="register" class="btn" />
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <section class="gallery" id="home">
+          <h1 class="heading">
+            <span>T</span>
+            <span>Ổ</span>
+            <span>N</span>
+            <span>G</span>
+            <span class="space"></span>
+            <span>H</span>
+            <span>Ợ</span>
+            <span>P</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/images/g-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/images/g-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Stravel</p>
+                <a href="/" class="btn">trang chủ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="hawaii">
+          <h1 class="heading">
+            <span>H</span>
+            <span>A</span>
+            <span>W</span>
+            <span>A</span>
+            <span>I</span>
+            <span>I</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/hawaii/images/gallery-img-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Hawaii</p>
+                <a href="/hawaii/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="mumbai">
+          <h1 class="heading">
+            <span>M</span>
+            <span>U</span>
+            <span>M</span>
+            <span>B</span>
+            <span>A</span>
+            <span>I</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/mumbai/images/gallery-img-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Mumbai</p>
+                <a href="/mumbai/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="paris">
+          <h1 class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>R</span>
+            <span>R</span>
+            <span>I</span>
+            <span>S</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/paris/images/gallery-img-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/paris/images/gallery-img-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Paris</p>
+                <a href="/paris/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="sydney">
+          <h1 class="heading">
+            <span>S</span>
+            <span>Y</span>
+            <span>D</span>
+            <span>N</span>
+            <span>E</span>
+            <span>Y</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/sydney/images/gallery-img-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/sydney/images/gallery-img-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Sydney</p>
+                <a href="/sydney/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="tokyo">
+          <h1 class="heading">
+            <span>T</span>
+            <span>O</span>
+            <span>K</span>
+            <span>Y</span>
+            <span>O</span>
+          </h1>
+          <div class="box-container">
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-1.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-2.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-3.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-4.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-5.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-6.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-7.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-8.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="/tokyo/images/gallery-img-9.jpg" alt="img" />
+              <div class="content">
+                <h3>Tổng hợp</h3>
+                <p>Tổng hợp những bức ảnh</p>
+                <p>đẹp nhất của Tokyo</p>
+                <a href="/tokyo/" class="btn">đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <a href="#" class="logo"
+              ><h3><span>S</span>travel</h3></a
+            >
+            <p>
+              Trải qua 17 năm phát triển bền vững, STravel đã ghi dấu ấn của
+              mình với thông điệp <br />
+              “Nâng tầm trải nghiệm từng chuyến đi”
+            </p>
+          </div>
+          <div class="box">
+            <h3>Chi nhánh chính</h3>
+            <a href="#">Hà nội</a>
+            <a href="#">Ấn độ</a>
+            <a href="#">Mỹ</a>
+            <a href="#">Nhật Bản</a>
+            <a href="#">Pháp</a>
+          </div>
+          <div class="box">
+            <h3>chuyển hướng</h3>
+            <a href="#home">Trang Chủ</a>
+            <a href="#book">Đặt lịch</a>
+            <a href="#packages">Ưu Đãi</a>
+            <a href="#services">Dịch Vụ</a>
+            <a href="#gallery">Thư Viện</a>
+            <a href="#review">Đánh giá</a>
+            <a href="#contact">Liên Hệ</a>
+          </div>
+          <div class="box">
+            <h3>Tương tác</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+          </div>
+        </div>
+        <h1 class="credit">
+          created by <span> STRAVEL </span> | all rights reserved!
+        </h1>
+      </section>
+    </div>
+    <script src="./gallery.js"></script>
+  </body>
+</html>
