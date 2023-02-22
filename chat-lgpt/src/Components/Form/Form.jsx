@@ -9,37 +9,38 @@ export default function Form({
   count,
 }) {
   const [value, setValue] = useState("");
+  const isFormDisabled = loading || count >= 3;
+
   useEffect(() => {
     if (!loading) {
       setValue("");
     }
   }, [loading]);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (!isFormDisabled && value) {
+      getData(value);
+      setUserChat(userChat.concat(value));
+      setLoading(true);
+    }
+  };
+
+  const inputPlaceholder =
+    count >= 3 ? "Vui lòng reload để tiếp tục!" : "Ask me!";
+
   return (
-    <form
-      className="form"
-      onSubmit={(e) => {
-        e.preventDefault();
-        if (count < 3) {
-          if (value) {
-            getData(value);
-            setUserChat(userChat.concat(value));
-            setLoading(true);
-          }
-        }
-      }}
-    >
+    <form className="form" onSubmit={handleFormSubmit}>
       <input
         className="input_form"
         type="text"
-        onChange={(e) => {
-          setValue(e.target.value);
-        }}
-        placeholder={"Ask me!"}
-        value={count >= 3 ? "Vui lòng reload để tiếp tục!" : value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder={inputPlaceholder}
+        value={value}
         autoFocus
-        disabled={loading || (count > 3 && true)}
+        disabled={isFormDisabled}
       />
-      <button type={loading || count >= 3 ? "button" : "submit"}>🔎</button>
+      <button type={isFormDisabled ? "button" : "submit"}>🔎</button>
     </form>
   );
 }
