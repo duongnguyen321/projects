@@ -21,7 +21,7 @@ export default function Form({
     e.preventDefault();
     if (!isFormDisabled && value) {
       getData(value);
-      setUserChat(userChat.concat(value));
+      setUserChat(userChat ? userChat.concat(value) : [value]);
       setLoading(true);
     }
   };
