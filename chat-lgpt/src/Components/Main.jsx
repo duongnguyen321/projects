@@ -13,20 +13,9 @@ export default function Main() {
   const client = new HttpClient();
   const getData = async (value) => {
     const options = {
-      model: "?model=text-davinci-003 ['text-curie-001','text-babbage-001']",
       prompt: `${value}`,
-      temperature: 0,
-      max_tokens: 4000,
-      top_p: 1,
-      frequency_penalty: 0.5,
-      presence_penalty: 0,
     };
-    const res = await client.post(
-      server.link,
-      { ...options },
-      {},
-      server.token
-    );
+    const res = await client.post(server.link, { ...options });
     if (res.response.ok) {
       if (res.data.bot) {
         setText(text.concat(res.data?.bot));
@@ -34,24 +23,24 @@ export default function Main() {
         setText(text.concat(res.data?.choices[0].text));
       }
       setLoading(false);
-      setCount(count+1);
+      setCount(count + 1);
     } else {
-      window.location.reload()
+      window.location.reload();
     }
   };
   return (
     <>
       <Header count={count} />
       <Chatbox text={text} userChat={userChat} loading={loading} />
-        <Form
-          getData={getData}
-          setUserChat={setUserChat}
-          userChat={userChat}
-          setLoading={setLoading}
-          loading={loading}
-          setCount={setCount}
-          count={count}
-        />
+      <Form
+        getData={getData}
+        setUserChat={setUserChat}
+        userChat={userChat}
+        setLoading={setLoading}
+        loading={loading}
+        setCount={setCount}
+        count={count}
+      />
     </>
   );
 }

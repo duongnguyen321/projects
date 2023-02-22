@@ -18,7 +18,7 @@ export default function Chatbox(props) {
             <p className="right">{userChat}</p>
             <Typed
               strings={[text]}
-              typeSpeed={20}
+              typeSpeed={15}
               showCursor={false}
               startDelay={200}
               fadeOut={true}

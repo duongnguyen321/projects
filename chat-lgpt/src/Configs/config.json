@@ -1,5 +1,4 @@
 {
-    "SERVER_API": "https://api.openai.com/v1/completions",
     "SERVER_API1": "https://chatgpt-vuxx.onrender.com",
     "SERVER_API2": "https://ghost-chatgpt.onrender.com",
     "SERVER_API3": "https://ghost-chatgpt.onrender.com",
