@@ -20,7 +20,7 @@ const contents = {
 };
 const information = {
   phone: "0986921104",
-  zalo: "https://bit.ly/zalonguyenduong",
+  zalo: "https://zalo.me/0986921104",
   email: "duongcoilc2004@gmail.com",
   facebook: "https://facebook.com/duongnguyen321",
   github: "https://github.com/duongnguyen321",
@@ -76,6 +76,20 @@ const projects = {
     api: "https://github.com/duongnguyen321/api/tree/main/apistravel",
     code: "https://github.com/duongnguyen321/projects/tree/main/stravel-in%20React",
     more: "Website sử dụng React, React-router-dom, EmailJS, ChatBot, Auth0, Restful API...",
+  },
+  chatGPT: {
+    name: "Chat-lgbt clone from chatGPT",
+    link: "https://chat-lgpt.vercel.app/",
+    time: "Project làm trong 3 tuần",
+    code: "https://github.com/duongnguyen321/projects/tree/main/chat-lgpt",
+    more: "Website sử dụng React,Context, Restful API....",
+  },
+  jsvip: {
+    name: "Jsvjp library for vanila javascript",
+    link: "https://www.npmjs.com/package/jsvjp",
+    time: "Project làm trong 2 tuần",
+    code: "https://github.com/duongnguyen321/jsvjp",
+    more: "Thư viện sử dụng Js.",
   },
   other_projects: "https://github.com/duongnguyen321/projects"
 };

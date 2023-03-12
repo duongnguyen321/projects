@@ -219,7 +219,60 @@ function Container() {
             {context.projects.stravel.more}
           </p>
         </div>
-
+        <div className="project_item">
+          <p className="body_16_medium project_time">
+            {context.projects.chatGPT.time}
+          </p>
+          <p className="body_18_medium project_name">
+            {context.projects.chatGPT.name}
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="body_14_regular project_link"
+            href={context.projects.chatGPT.link}
+          >
+            Link : {context.projects.chatGPT.name}
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="body_14_regular project_link"
+            href={context.projects.chatGPT.code}
+          >
+            Code : {context.projects.chatGPT.name}
+          </a>
+          <p className="body_14_regular project_info">
+            {context.projects.chatGPT.more}
+          </p>
+        </div>
+        <div className="project_item">
+          <p className="body_16_medium project_time">
+            {context.projects.jsvip.time}
+          </p>
+          <p className="body_18_medium project_name">
+            {context.projects.jsvip.name}
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="body_14_regular project_link"
+            href={context.projects.jsvip.link}
+          >
+            Link : {context.projects.jsvip.name}
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="body_14_regular project_link"
+            href={context.projects.jsvip.code}
+          >
+            Code : {context.projects.jsvip.name}
+          </a>
+          <p className="body_14_regular project_info">
+            {context.projects.jsvip.more}
+          </p>
+        </div>
         <div className="project_item">
           <p className="body_18_medium project_name">My Other projects</p>
           <a
